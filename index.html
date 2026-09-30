@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +25,9 @@
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="notes.php">Browse Notes</a>
-            <a href="#pyq">PYQs</a>
-            <a href="#about">About</a>
+            <a href="pyq.php">PYQs</a>
+            <a href="#important">Important Questions</a>
+            <a href="about.php">About us</a>
         </nav>
 
         <div class="nav-buttons">
@@ -36,11 +38,17 @@
     </header>
 
 
-    <!-- ================= HERO SECTION ================= -->
+    <!-- ================= HERO ================= -->
 
     <main>
 
         <section class="hero">
+
+            <!-- GALAXY PARTICLES -->
+            <canvas class="hero-galaxy" id="hero-galaxy"></canvas>
+
+
+            <!-- HERO CONTENT -->
 
             <div class="hero-content">
 
@@ -104,6 +112,7 @@
             <div class="section-heading">
 
                 <div>
+
                     <span class="section-label">
                         EXPLORE
                     </span>
@@ -115,6 +124,7 @@
                     <p>
                         Find study material for your subjects.
                     </p>
+
                 </div>
 
                 <a href="notes.php" class="view-all">
@@ -126,7 +136,8 @@
 
             <div class="browse-grid">
 
-                <!-- C -->
+
+                <!-- C PROGRAMMING -->
 
                 <div class="browse-card">
 
@@ -139,7 +150,7 @@
                     </h3>
 
                     <p>
-                        42 Notes
+                        Programming fundamentals and concepts.
                     </p>
 
                     <a href="c-programming.html">
@@ -149,20 +160,20 @@
                 </div>
 
 
-                <!-- PYTHON -->
+                <!-- DSP -->
 
                 <div class="browse-card">
 
                     <div class="card-icon">
-                        🐍
+                        ◈
                     </div>
 
                     <h3>
-                        Python
+                        DSP
                     </h3>
 
                     <p>
-                        35 Notes
+                        Data Structures using Python.
                     </p>
 
                     <a href="notes.php">
@@ -172,20 +183,20 @@
                 </div>
 
 
-                <!-- DBMS -->
+                <!-- DMS -->
 
                 <div class="browse-card">
 
                     <div class="card-icon">
-                        🗄
+                        ∞
                     </div>
 
                     <h3>
-                        DBMS
+                        DMS
                     </h3>
 
                     <p>
-                        28 Notes
+                        Discrete Mathematics and concepts.
                     </p>
 
                     <a href="notes.php">
@@ -195,20 +206,20 @@
                 </div>
 
 
-                <!-- BEE -->
+                <!-- DTE -->
 
                 <div class="browse-card">
 
                     <div class="card-icon">
-                        ⚡
+                        ◉
                     </div>
 
                     <h3>
-                        BEE
+                        DTE
                     </h3>
 
                     <p>
-                        31 Notes
+                        Digital techniques and logic.
                     </p>
 
                     <a href="notes.php">
@@ -217,46 +228,271 @@
 
                 </div>
 
+
+                <!-- AMS -->
+
+                <div class="browse-card">
+
+                    <div class="card-icon">
+                        Σ
+                    </div>
+
+                    <h3>
+                        AMS
+                    </h3>
+
+                    <p>
+                        Applied mathematics and calculations.
+                    </p>
+
+                    <a href="notes.php">
+                        View Notes →
+                    </a>
+
+                </div>
+
+
+                <!-- BSC -->
+
+                <div class="browse-card">
+
+                    <div class="card-icon">
+                        ⚛
+                    </div>
+
+                    <h3>
+                        BSC
+                    </h3>
+
+                    <p>
+                        Science fundamentals and applications.
+                    </p>
+
+                    <a href="notes.php">
+                        View Notes →
+                    </a>
+
+                </div>
             </div>
 
         </section>
 
+        
+        <!-- ================= PYQs ================= -->
 
-        <!-- ================= PYQ ================= -->
+<section class="browse-section" id="pyq">
 
-        <section class="pyq-section" id="pyq">
+    <div class="section-heading">
 
-            <div class="pyq-content">
+        <div>
 
-                <span class="section-label">
-                    EXAM PREPARATION
-                </span>
+            <span class="section-label">
+                EXAM PREPARATION
+            </span>
 
-                <h2>
-                    Previous Year Questions
-                </h2>
+            <h2>
+                Previous Year Questions
+            </h2>
 
-                <p>
-                    Prepare smarter with previous year question
-                    papers and important exam topics.
-                </p>
+            <p>
+                Practice previous year question papers
+                and prepare smarter for your exams.
+            </p>
+
+        </div>
+
+        <a href="pyq.php" class="view-all">
+            View All →
+        </a>
+
+    </div>
 
 
-                <div class="pyq-buttons">
+    <div class="browse-grid">
 
-                    <a href="#">
-                        Semester 3 →
-                    </a>
 
-                    <a href="#">
-                        Semester 4 →
-                    </a>
+        <!-- SEMESTER 1 -->
 
-                </div>
+        <div class="browse-card">
 
+            <div class="card-icon">
+                01
             </div>
 
-        </section>
+            <h3>
+                Semester 1
+            </h3>
+
+            <p>
+                Previous year question papers.
+            </p>
+
+            <a href="paper-codes.php?semester=1">
+                View PYQs →
+            </a>
+
+        </div>
+
+
+        <!-- SEMESTER 2 -->
+
+        <div class="browse-card">
+
+            <div class="card-icon">
+                02
+            </div>
+
+            <h3>
+                Semester 2
+            </h3>
+
+            <p>
+                Previous year question papers.
+            </p>
+
+            <a href="paper-codes.php?semester=2">
+                View PYQs →
+            </a>
+
+        </div>
+
+
+        <!-- SEMESTER 3 -->
+
+        <div class="browse-card">
+
+            <div class="card-icon">
+                03
+            </div>
+
+            <h3>
+                Semester 3
+            </h3>
+
+            <p>
+                Previous year question papers.
+            </p>
+
+            <a href="paper-codes.php?semester=3">
+                View PYQs →
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+        
+    <!-- ================= IMPORTANT QUESTIONS ================= -->
+
+<section class="browse-section" id="important">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-label">
+                EXAM FOCUS
+            </span>
+
+            <h2>
+                Important Questions
+            </h2>
+
+            <p>
+                Focus on important topics and questions
+                before your exams.
+            </p>
+
+        </div>
+
+        <a href="#" class="view-all">
+            View All →
+        </a>
+
+    </div>
+
+
+    <div class="browse-grid">
+
+
+        <!-- C PROGRAMMING -->
+
+        <div class="browse-card">
+
+            <div class="card-icon">
+                01
+            </div>
+
+            <h3>
+                C Programming
+            </h3>
+
+            <p>
+                Important programs, concepts and theory questions.
+            </p>
+
+            <a href="#">
+                Explore Questions →
+            </a>
+
+        </div>
+
+
+        <!-- DSP -->
+
+        <div class="browse-card">
+
+            <div class="card-icon">
+                02
+            </div>
+
+            <h3>
+                DSP
+            </h3>
+
+            <p>
+                Important data structure concepts and questions.
+            </p>
+
+            <a href="#">
+                Explore Questions →
+            </a>
+
+        </div>
+
+
+        <!-- DMS -->
+
+        <div class="browse-card">
+
+            <div class="card-icon">
+                03
+            </div>
+
+            <h3>
+                DMS
+            </h3>
+
+            <p>
+                Important mathematics topics and questions.
+            </p>
+
+            <a href="#">
+                Explore Questions →
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+       
+        
 
 
         <!-- ================= ABOUT ================= -->
@@ -272,9 +508,9 @@
             </h2>
 
             <p>
-                A student-focused platform created to make notes,
-                manuals, PYQs and important study material easier
-                to find and share.
+                NoteHub is a student-focused platform created to
+                make notes, manuals, previous year questions and
+                important study material easier to find and share.
             </p>
 
         </section>
@@ -286,18 +522,254 @@
 
     <footer>
 
-        <div class="footer-logo">
-            ✦ NoteHub
+        <div class="footer-top">
+
+            <div>
+
+                <div class="footer-logo">
+                    ✦ NoteHub
+                </div>
+
+                <p>
+                    Your study material, all in one place.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="notes.php">
+                    Browse Notes
+                </a>
+
+                <a href="#pyq">
+                    PYQs
+                </a>
+
+                <a href="#important">
+                    Important Questions
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
         </div>
 
-        <p>
-            © 2026 NoteHub. Made for students.
-        </p>
+
+        <!-- GIANT NOTEHUB -->
+
+        <div class="giant-footer-text">
+            NOTEHUB
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NoteHub. Made for students.
+            </p>
+
+            <p>
+                Study • Share • Succeed
+            </p>
+
+        </div>
 
     </footer>
 
 
+    <!-- EXISTING JAVASCRIPT -->
+
     <script src="js/script.js"></script>
+
+
+    <!-- ================= GALAXY PARTICLES ================= -->
+
+    <script>
+
+        const canvas = document.getElementById("hero-galaxy");
+        const hero = document.querySelector(".hero");
+
+        const ctx = canvas.getContext("2d");
+
+        let particles = [];
+        let mouse = {
+            x: null,
+            y: null
+        };
+
+
+        function resizeGalaxy() {
+
+            canvas.width = hero.offsetWidth;
+            canvas.height = hero.offsetHeight;
+
+            createParticles();
+        }
+
+
+        function createParticles() {
+
+            particles = [];
+
+            const count = Math.min(
+                180,
+                Math.floor((canvas.width * canvas.height) / 9000)
+            );
+
+
+            for (let i = 0; i < count; i++) {
+
+                particles.push({
+
+                    x: Math.random() * canvas.width,
+
+                    y: Math.random() * canvas.height,
+
+                    size: Math.random() * 1.7 + 0.4,
+
+                    speedX: (Math.random() - 0.5) * 0.15,
+
+                    speedY: (Math.random() - 0.5) * 0.15,
+
+                    opacity: Math.random() * 0.7 + 0.2,
+
+                    glow: Math.random() * 8 + 4
+
+                });
+
+            }
+
+        }
+
+
+        function drawGalaxy() {
+
+            ctx.clearRect(
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+
+            particles.forEach((particle) => {
+
+                particle.x += particle.speedX;
+                particle.y += particle.speedY;
+
+
+                if (particle.x < 0)
+                    particle.x = canvas.width;
+
+                if (particle.x > canvas.width)
+                    particle.x = 0;
+
+                if (particle.y < 0)
+                    particle.y = canvas.height;
+
+                if (particle.y > canvas.height)
+                    particle.y = 0;
+
+
+                /* Mouse interaction */
+
+                if (mouse.x !== null && mouse.y !== null) {
+
+                    const dx = particle.x - mouse.x;
+                    const dy = particle.y - mouse.y;
+
+                    const distance = Math.sqrt(
+                        dx * dx + dy * dy
+                    );
+
+
+                    if (distance < 120) {
+
+                        const force =
+                            (120 - distance) / 120;
+
+                        particle.x +=
+                            (dx / distance) * force * 0.7;
+
+                        particle.y +=
+                            (dy / distance) * force * 0.7;
+
+                    }
+
+                }
+
+
+                /* Particle glow */
+
+                ctx.beginPath();
+
+                ctx.arc(
+                    particle.x,
+                    particle.y,
+                    particle.size,
+                    0,
+                    Math.PI * 2
+                );
+
+
+                ctx.shadowBlur = particle.glow;
+
+                ctx.shadowColor =
+                    "rgba(180, 120, 255, 0.9)";
+
+                ctx.fillStyle =
+                    `rgba(200, 160, 255, ${particle.opacity})`;
+
+                ctx.fill();
+
+            });
+
+
+            requestAnimationFrame(drawGalaxy);
+
+        }
+
+
+        /* Mouse movement */
+
+        hero.addEventListener("mousemove", (event) => {
+
+            const rect = hero.getBoundingClientRect();
+
+            mouse.x = event.clientX - rect.left;
+            mouse.y = event.clientY - rect.top;
+
+        });
+
+
+        hero.addEventListener("mouseleave", () => {
+
+            mouse.x = null;
+            mouse.y = null;
+
+        });
+
+
+        window.addEventListener(
+            "resize",
+            resizeGalaxy
+        );
+
+
+        resizeGalaxy();
+
+        drawGalaxy();
+
+    </script>
 
 </body>
 

@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "notehub";
+$host = getenv("DB_HOST") ?: "localhost";
+$username = getenv("DB_USER") ?: "root";
+$password = getenv("DB_PASSWORD") ?: "";
+$database = getenv("DB_NAME") ?: "notehub";
 
 $conn = new mysqli($host, $username, $password, $database);
 

@@ -1576,3 +1576,1303 @@ footer {
     color: #d0aaff;
     text-shadow: 0 0 12px #b982ff;
 }
+/* =========================================================
+   NOTEHUB HOMEPAGE - NEW DESIGN
+   ========================================================= */
+
+
+/* ================= HERO ================= */
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    position: relative;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    isolation: isolate;
+
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(157, 78, 255, 0.18),
+            transparent 45%
+        ),
+        #07060a;
+}
+/* =========================
+   GALAXY BACKGROUND
+========================= */
+
+.hero-galaxy {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 850px;
+
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+/* Keep Hero content above Galaxy */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.browse-section {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+/* Galaxy will stay BEHIND the Hero content */
+
+
+
+/* Hero text/content stays above Galaxy */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.hero-galaxy::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        transparent 20%,
+        rgba(7, 6, 10, 0.35) 70%,
+        rgba(7, 6, 10, 0.75) 100%
+    );
+
+    pointer-events: none;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(184, 130, 255, 0.35);
+    border-radius: 30px;
+    background: rgba(160, 90, 255, 0.08);
+    color: #d5b5ff;
+    font-size: 14px;
+    box-shadow: 0 0 25px rgba(168, 96, 255, 0.08);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.hero h1 span {
+    color: #b982ff;
+    text-shadow:
+        0 0 25px rgba(185, 130, 255, 0.25),
+        0 0 60px rgba(185, 130, 255, 0.12);
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 30px auto;
+    color: #9992aa;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ================= SEARCH ================= */
+
+.hero-search {
+    width: min(650px, 100%);
+    height: 58px;
+    margin: 30px auto 22px;
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(185, 130, 255, 0.25);
+    border-radius: 14px;
+
+    padding: 5px;
+
+    box-shadow:
+        0 0 30px rgba(160, 90, 255, 0.05),
+        inset 0 0 20px rgba(255, 255, 255, 0.015);
+}
+
+.hero-search span {
+    padding: 0 15px;
+    color: #c69cff;
+    font-size: 23px;
+}
+
+.hero-search input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.hero-search input::placeholder {
+    color: #777080;
+}
+
+.hero-search button {
+    height: 46px;
+    padding: 0 23px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #b982ff;
+    color: #100b16;
+
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.hero-search button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(185, 130, 255, 0.45);
+}
+
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #b982ff;
+    color: #100b16;
+    box-shadow: 0 0 25px rgba(185, 130, 255, 0.12);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(185, 130, 255, 0.4);
+}
+
+.secondary-btn {
+    color: #d9c4ef;
+    border: 1px solid rgba(185, 130, 255, 0.35);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.secondary-btn:hover {
+    transform: translateY(-3px);
+    border-color: #b982ff;
+    box-shadow: 0 0 25px rgba(185, 130, 255, 0.18);
+}
+
+
+/* ================= REMOVE TEMPORARY GALAXY TEXT ================= */
+
+.galaxy-placeholder {
+    display: none;
+}
+
+.hero-visual {
+    display: none;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+.browse-section,
+.pyq-section,
+.important-section {
+    padding: 100px 7%;
+    background: #08070b;
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #b982ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 42px;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    margin: 10px 0 0;
+    color: #81798e;
+}
+
+.view-all {
+    color: #c69cff;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.view-all:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(185, 130, 255, 0.6);
+}
+
+
+/* =========================================================
+   BROWSE NOTES
+========================================================= */
+
+.browse-section {
+    position: relative;
+    padding: 110px 4% 100px;
+    background: #07060a;
+}
+
+/* Section heading */
+
+.section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: #b982ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.section-heading p {
+    margin-top: 12px;
+
+    color: #81798e;
+    font-size: 15px;
+}
+
+/* View All */
+
+.view-all {
+    color: #c69cff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.view-all:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(185, 130, 255, 0.8);
+}
+
+
+/* =========================================================
+   BROWSE GRID
+========================================================= */
+
+.browse-grid {
+    display: grid;
+
+    /* 3 cards in one row */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   BROWSE CARD
+========================================================= */
+
+.browse-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 245px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.012)
+        );
+
+    border: 1px solid rgba(185, 130, 255, 0.16);
+    border-radius: 20px;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Purple glow inside card */
+
+.browse-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -100px;
+    right: -90px;
+
+    background: rgba(185, 130, 255, 0.16);
+
+    filter: blur(55px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transition: 0.4s ease;
+}
+
+
+/* Bottom glow */
+
+.browse-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    bottom: -80px;
+    left: -50px;
+
+    background: rgba(140, 70, 255, 0.10);
+
+    filter: blur(50px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Hover */
+
+.browse-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(185, 130, 255, 0.55);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(185, 130, 255, 0.13);
+}
+
+.browse-card:hover::before {
+    background: rgba(185, 130, 255, 0.24);
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 26px;
+
+    border-radius: 14px;
+
+    background: rgba(185, 130, 255, 0.09);
+
+    border: 1px solid rgba(185, 130, 255, 0.25);
+
+    color: #c69cff;
+
+    font-size: 21px;
+
+    box-shadow:
+        0 0 20px rgba(185, 130, 255, 0.07);
+
+    transition: 0.3s ease;
+}
+
+.browse-card:hover .card-icon {
+    background: rgba(185, 130, 255, 0.16);
+
+    border-color: rgba(185, 130, 255, 0.55);
+
+    box-shadow:
+        0 0 25px rgba(185, 130, 255, 0.22);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.browse-card h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.browse-card p {
+    margin: 0;
+
+    color: #81798e;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   VIEW NOTES
+========================================================= */
+
+.browse-card a {
+    position: relative;
+    z-index: 2;
+
+    margin-top: auto;
+    padding-top: 25px;
+
+    color: #c69cff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.browse-card a:hover {
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(185, 130, 255, 0.8);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .browse-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .browse-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+
+
+
+/* ================= PYQ ================= */
+
+.pyq-section {
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(130, 70, 200, 0.12),
+            transparent 35%
+        ),
+        #08070b;
+}
+
+.pyq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pyq-card {
+    min-height: 260px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.045),
+            rgba(255,255,255,0.01)
+        );
+
+    border: 1px solid rgba(185,130,255,0.16);
+    border-radius: 20px;
+
+    transition: 0.35s ease;
+}
+
+.pyq-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(185,130,255,0.55);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.4),
+        0 0 35px rgba(185,130,255,0.14);
+}
+
+.pyq-number {
+    color: #b982ff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.pyq-card span {
+    color: #8b8198;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.pyq-card h3 {
+    margin: 8px 0;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.pyq-card p {
+    margin: 0;
+    color: #81798e;
+}
+
+.pyq-card a {
+    margin-top: auto;
+    padding-top: 25px;
+
+    color: #c69cff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pyq-card a:hover {
+    color: white;
+}
+
+
+/* ================= IMPORTANT QUESTIONS ================= */
+
+.important-section {
+    background: #08070b;
+}
+
+.important-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.important-card {
+    min-height: 230px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(185,130,255,0.06),
+            rgba(255,255,255,0.015)
+        );
+
+    border: 1px solid rgba(185,130,255,0.15);
+    border-radius: 20px;
+
+    transition: 0.35s ease;
+}
+
+.important-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(185,130,255,0.55);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.4),
+        0 0 30px rgba(185,130,255,0.13);
+}
+
+.important-tag {
+    width: fit-content;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(185,130,255,0.1);
+    border: 1px solid rgba(185,130,255,0.2);
+
+    color: #c69cff !important;
+
+    font-size: 10px !important;
+    letter-spacing: 1.5px !important;
+}
+
+.important-card h3 {
+    margin: 22px 0 10px;
+
+    color: white;
+    font-size: 22px;
+}
+
+.important-card p {
+    margin: 0;
+
+    color: #81798e;
+    line-height: 1.6;
+}
+
+.important-card a {
+    margin-top: auto;
+    padding-top: 25px;
+
+    color: #c69cff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.important-card a:hover {
+    color: white;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-section {
+    padding: 130px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(160,90,255,0.1),
+            transparent 40%
+        ),
+        #08070b;
+}
+
+.about-section h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(35px, 5vw, 58px);
+    letter-spacing: -2px;
+}
+
+.about-section p {
+    max-width: 700px;
+
+    margin: 25px auto 0;
+
+    color: #81798e;
+
+    line-height: 1.8;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 55px 7% 25px;
+
+    background: #050409;
+
+    border-top: 1px solid rgba(185,130,255,0.12);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.footer-logo:first-letter {
+    color: #b982ff;
+}
+
+.footer-top p {
+    color: #6f6879;
+    margin-top: 12px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #85808d;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #c69cff;
+}
+
+
+/* ================= GIANT NOTEHUB ================= */
+
+.giant-footer-text {
+    margin-top: 80px;
+
+    text-align: center;
+
+    font-size: clamp(90px, 17vw, 270px);
+    font-weight: 900;
+
+    line-height: 0.75;
+    letter-spacing: -8px;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px rgba(185,130,255,0.35);
+
+    background: linear-gradient(
+        to bottom,
+        rgba(185,130,255,0.35),
+        rgba(185,130,255,0.03)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    user-select: none;
+}
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 45px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #5f5968;
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .browse-grid,
+    .pyq-grid,
+    .important-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 600px;
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-search {
+        height: auto;
+        padding: 8px;
+        flex-wrap: wrap;
+    }
+
+    .hero-search input {
+        min-width: 150px;
+        height: 42px;
+    }
+
+    .hero-search button {
+        height: 42px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .browse-grid,
+    .pyq-grid,
+    .important-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .giant-footer-text {
+        font-size: 22vw;
+        letter-spacing: -3px;
+    }
+
+}
+/* =========================================================
+   SUBJECT / CHAPTER PAGE
+========================================================= */
+
+.subject-header {
+    position: relative;
+    padding: 150px 6% 70px;
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(185, 130, 255, 0.14),
+            transparent 45%
+        ),
+        #07060a;
+    text-align: center;
+    overflow: hidden;
+}
+
+.subject-header::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(185, 130, 255, 0.12);
+    filter: blur(90px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.subject-header .section-label {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #b982ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.subject-header h1 {
+    position: relative;
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.subject-header p {
+    position: relative;
+    max-width: 650px;
+    margin: 18px auto 0;
+    color: #91889d;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CHAPTERS SECTION
+========================================================= */
+
+.chapters-section {
+    position: relative;
+    min-height: 600px;
+    padding: 80px 6% 120px;
+    background: #07060a;
+}
+
+.chapters-section .section-heading {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+}
+
+.chapters-section .section-label {
+    color: #b982ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.chapters-section h2 {
+    margin: 8px 0 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+
+/* CHAPTER LIST */
+
+.chapters-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* CHAPTER CARD */
+
+.chapter-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    min-height: 95px;
+    padding: 18px 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.012)
+        );
+
+    border: 1px solid rgba(185, 130, 255, 0.14);
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* Purple glow */
+
+.chapter-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: -100px;
+    top: -90px;
+
+    background: rgba(185, 130, 255, 0.13);
+    filter: blur(60px);
+    border-radius: 50%;
+
+    transition: 0.35s ease;
+}
+
+
+/* Left line */
+
+.chapter-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+
+    background: rgba(185, 130, 255, 0.25);
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Hover */
+
+.chapter-card:hover {
+    transform: translateX(7px);
+
+    border-color: rgba(185, 130, 255, 0.45);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(185, 130, 255, 0.10);
+}
+
+.chapter-card:hover::before {
+    background: rgba(185, 130, 255, 0.22);
+}
+
+.chapter-card:hover::after {
+    background: #b982ff;
+    box-shadow: 0 0 15px rgba(185, 130, 255, 0.8);
+}
+
+
+/* NUMBER */
+
+.chapter-number {
+    position: relative;
+    z-index: 2;
+
+    min-width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(185, 130, 255, 0.08);
+    border: 1px solid rgba(185, 130, 255, 0.20);
+
+    color: #b982ff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.chapter-card:hover .chapter-number {
+    background: rgba(185, 130, 255, 0.16);
+    border-color: rgba(185, 130, 255, 0.5);
+
+    box-shadow:
+        0 0 20px rgba(185, 130, 255, 0.18);
+}
+
+
+/* CHAPTER INFO */
+
+.chapter-info {
+    position: relative;
+    z-index: 2;
+
+    flex: 1;
+}
+
+.chapter-info h3 {
+    margin: 0 0 6px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.chapter-info p {
+    margin: 0;
+
+    color: #766d82;
+
+    font-size: 13px;
+}
+
+
+/* VIEW NOTES BUTTON */
+
+.chapter-btn {
+    position: relative;
+    z-index: 3;
+
+    padding: 11px 18px;
+
+    border: 1px solid rgba(185, 130, 255, 0.25);
+    border-radius: 10px;
+
+    color: #c69cff;
+
+    background: rgba(185, 130, 255, 0.05);
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.chapter-btn:hover {
+    color: #ffffff;
+
+    background: rgba(185, 130, 255, 0.14);
+
+    border-color: rgba(185, 130, 255, 0.65);
+
+    box-shadow:
+        0 0 20px rgba(185, 130, 255, 0.18);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .subject-header {
+        padding: 120px 6% 60px;
+    }
+
+    .subject-header h1 {
+        font-size: 42px;
+    }
+
+    .chapters-section {
+        padding: 60px 5% 90px;
+    }
+
+    .chapter-card {
+        gap: 15px;
+        padding: 16px;
+    }
+
+    .chapter-number {
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .chapter-info h3 {
+        font-size: 14px;
+    }
+
+    .chapter-btn {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+}
