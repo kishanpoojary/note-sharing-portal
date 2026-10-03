@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +19,7 @@
 
         .about-page {
             min-height: 100vh;
-            padding-bottom: 100px;
+            padding-bottom: 0;
             background: #07060a;
         }
 
@@ -29,9 +31,7 @@
         .about-hero {
             position: relative;
             overflow: hidden;
-
             text-align: center;
-
             padding: 110px 20px 80px;
         }
 
@@ -101,7 +101,6 @@
         .about-container {
             width: 90%;
             max-width: 1150px;
-
             margin: auto;
         }
 
@@ -432,44 +431,91 @@
 
 
         /* ================================
-           GIANT NOTEHUB FOOTER
+           GIANT NOTEHUB
+           SAME STYLE AS HOME PAGE
         ================================= */
 
         .about-footer {
+            position: relative;
+
             margin-top: 120px;
 
-            padding: 80px 20px 40px;
+            padding: 80px 0 30px;
 
             text-align: center;
 
             border-top:
-                1px solid rgba(190, 150, 255, 0.12);
+                1px solid rgba(190, 150, 255, 0.10);
 
             overflow: hidden;
+
+            background: #07060a;
         }
 
+
+        /* Lavender glow behind NOTEHUB */
+
+        .about-footer::before {
+            content: "";
+
+            position: absolute;
+
+            width: 600px;
+            height: 220px;
+
+            left: 50%;
+            bottom: 20px;
+
+            transform: translateX(-50%);
+
+            background: rgba(185, 130, 255, 0.12);
+
+            filter: blur(100px);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+        }
+
+
+        /* Giant NOTEHUB */
+
         .about-footer h2 {
-            color: #ffffff;
+            position: relative;
 
-            font-size: clamp(80px, 16vw, 220px);
+            z-index: 2;
 
-            line-height: 0.85;
+            width: 100%;
 
-            letter-spacing: -8px;
+            color: #c69cff;
 
-            margin: 0;
+            font-size: clamp(80px, 17vw, 230px);
 
             font-weight: 800;
 
-            opacity: 0.95;
+            line-height: 0.82;
+
+            letter-spacing: -10px;
 
             text-align: center;
 
+            white-space: nowrap;
+
+            margin: 0;
+
+            opacity: 0.95;
+
             text-shadow:
-                0 0 35px rgba(198, 156, 255, 0.08);
+                0 0 15px rgba(198, 156, 255, 0.35),
+                0 0 40px rgba(198, 156, 255, 0.20),
+                0 0 80px rgba(198, 156, 255, 0.10);
         }
 
         .about-footer p {
+            position: relative;
+
+            z-index: 2;
+
             color: #81798e;
 
             margin-top: 25px;
@@ -536,14 +582,15 @@
             }
 
             .about-footer h2 {
-                font-size: 38px;
+                font-size: 18vw;
 
-                letter-spacing: 4px;
+                letter-spacing: -3px;
             }
 
         }
 
     </style>
+
 </head>
 
 
@@ -557,9 +604,13 @@
     <header class="navbar">
 
         <div class="logo">
+
             <span class="logo-icon">✦</span>
+
             NoteHub
+
         </div>
+
 
         <nav>
 
@@ -585,6 +636,7 @@
 
         </nav>
 
+
         <div class="nav-buttons">
 
             <button class="login-btn">
@@ -598,6 +650,7 @@
         </div>
 
     </header>
+
 
 
     <!-- ================================
@@ -616,17 +669,23 @@
             </span>
 
             <h1>
+
                 Meet the people behind
+
                 <span>NoteHub</span>
+
             </h1>
 
             <p>
+
                 NoteHub is a student-focused platform created
                 to make academic resources easier to find,
                 organize and access.
+
             </p>
 
         </section>
+
 
 
         <div class="about-container">
@@ -639,25 +698,35 @@
             <section class="about-block">
 
                 <h2>
+
                     What is
+
                     <span>NoteHub?</span>
+
                 </h2>
 
+
                 <p>
+
                     NoteHub is a centralized academic resource
                     platform designed for students. It brings
                     notes, previous year question papers and
                     important questions together in one
                     organized place.
+
                 </p>
 
+
                 <p>
+
                     Our goal is to make exam preparation simpler
                     by reducing the time students spend searching
                     for study material.
+
                 </p>
 
             </section>
+
 
 
             <!-- ================================
@@ -667,9 +736,13 @@
             <section class="about-block">
 
                 <h2>
+
                     Why We Built
+
                     <span>NoteHub</span>
+
                 </h2>
+
 
                 <div class="why-grid">
 
@@ -685,11 +758,14 @@
                         </h3>
 
                         <p>
+
                             Keep notes, PYQs and important
                             questions organized in one platform.
+
                         </p>
 
                     </div>
+
 
 
                     <div class="why-card">
@@ -703,12 +779,15 @@
                         </h3>
 
                         <p>
+
                             Find the study material you need
                             without searching through multiple
                             folders.
+
                         </p>
 
                     </div>
+
 
 
                     <div class="why-card">
@@ -722,8 +801,10 @@
                         </h3>
 
                         <p>
+
                             Created with the needs of students
                             and academic preparation in mind.
+
                         </p>
 
                     </div>
@@ -732,6 +813,7 @@
                 </div>
 
             </section>
+
 
 
             <!-- ================================
@@ -748,8 +830,11 @@
                     </span>
 
                     <h2>
+
                         Our
+
                         <span>Team</span>
+
                     </h2>
 
                     <p>
@@ -785,6 +870,7 @@
                     </div>
 
 
+
                     <!-- MEMBER 01 -->
 
                     <div class="team-card">
@@ -794,11 +880,11 @@
                         </div>
 
                         <h3>
-                            Member 01
+                            Disha dharawat
                         </h3>
 
                         <div class="role">
-                            TEAM MEMBER
+                            CO-FOUNDER & TEAM MEMBER
                         </div>
 
                         <p>
@@ -806,6 +892,7 @@
                         </p>
 
                     </div>
+
 
 
                     <!-- MEMBER 02 -->
@@ -817,11 +904,11 @@
                         </div>
 
                         <h3>
-                            Member 02
+                            Yashshree deokate
                         </h3>
 
                         <div class="role">
-                            TEAM MEMBER
+                             DATA HANDLER & TEAM MEMBER
                         </div>
 
                         <p>
@@ -829,6 +916,7 @@
                         </p>
 
                     </div>
+
 
 
                     <!-- MEMBER 03 -->
@@ -840,11 +928,11 @@
                         </div>
 
                         <h3>
-                            Member 03
+                            Smit lingyat
                         </h3>
 
                         <div class="role">
-                            TEAM MEMBER
+                            DATA HANDLER & TEAM MEMBER
                         </div>
 
                         <p>
@@ -859,6 +947,7 @@
             </section>
 
 
+
             <!-- ================================
                  VISION
             ================================= -->
@@ -868,20 +957,26 @@
                 <div class="vision-box">
 
                     <h2>
+
                         Our
+
                         <span>Vision</span>
+
                     </h2>
 
                     <p>
+
                         We want to build a simple and organized
                         academic platform where students can
                         quickly discover the resources they need
                         for learning and exam preparation.
+
                     </p>
 
                 </div>
 
             </section>
+
 
 
             <!-- ================================
@@ -890,6 +985,7 @@
 
             <section class="about-block">
 
+
                 <div class="team-heading">
 
                     <span class="section-label">
@@ -897,8 +993,11 @@
                     </span>
 
                     <h2>
+
                         Technologies Behind
+
                         <span>NoteHub</span>
+
                     </h2>
 
                 </div>
@@ -938,14 +1037,16 @@
         </div>
 
 
+
         <!-- ================================
              GIANT NOTEHUB
         ================================= -->
 
-        <footer class="about-footer">
+        <footer>
+        
 
             <h2>
-                NOTEHUB
+            NOTEHUB
             </h2>
 
             <p>
